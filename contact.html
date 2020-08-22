@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- hier zet je de code in de head tags -->
+    <title>dit is de formulieren-pagina van Sander</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hier kan je wat invullen</h1>
+    </header>
+    <main>
+      <form name="culinair" method="POST" data-netlify="true">
+        <p>
+          <label>Naam: <input type="text" name="naam" /></label>
+        </p>
+        <p>
+          <label>E-mail: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Telefoonnummer: <input type="tel" name="telnr" /></label>
+        </p>
+        <p>
+          <label>Leeftijd: <input type="number" name="leeftijd" /></label>
+        </p>
+        <p>
+          <label
+            >Geboortedatum (DD-MM-JJJJ):
+            <input type="date" name="gebdatum" placeholder="dd-mm-yyyy"
+          /></label>
+        </p>
+        <p>
+          <label
+            ><input type="radio" name="sex" value="male" checked />man</label
+          >
+          <label><input type="radio" name="sex" value="female" />vrouw</label>
+          <label
+            ><input type="radio" name="sex" value="neutral" />neutraal</label
+          >
+        </p>
+        <p>
+          <label
+            >Favoriete keuken:
+            <select id="keuken" name="keuken">
+              <option value="italiaans" selected>Italiaans</option>
+              <option value="frans">Frans</option>
+              <option value="arabisch">Arabisch</option>
+              <option value="spaans">Spaans</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label
+            >Favoriete kleur short:<input type="color" name="kleur"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Biografie:
+            <textarea name="biografie" rows="5" cols="35"></textarea>
+          </label>
+        </p>
+        <p>
+          <label
+            >Bestandsnaam recept: <input type="file" name="bestand"
+          /></label>
+        </p>
+        <p>
+          <label>URL website: <input type="url" name="website" /></label>
+        </p>
+        <p><input type="reset" /><input type="submit" /></p>
+      </form>
+    </main>
+    <footer>
+      <a href="index.html"><h1>terug naar de homepage</h1></a>
+    </footer>
+  </body>
+</html>
